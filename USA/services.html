@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - InnerLight Reflections</title>
+
+  <link rel="icon" type="image/png" href="../img/Logo_kristine.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Estilo.css" />
+
+  <script src="../Animaciones.js" defer></script>
+  <script src="../idiomas.js" defer></script>
+</head>
+
+<body>
+
+<!-- Cabecera (igual en todas las páginas): menú a la izquierda, logo en el centro, acciones a la derecha -->
+<header class="site-header">
+  <div class="header-grid">
+    <a class="logo" href="home.html">
+      <img src="../img/Logo_kristine.png" alt="InnerLight Reflections Logo" />
+    </a>
+
+    <!-- Botón de tres barras (solo se ve en móvil y tablet) -->
+    <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu-panel">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Menú: en ordenador va en la cabecera; en móvil es un panel que se desliza desde la derecha -->
+    <div class="menu-panel" id="menu-panel">
+      <nav class="nav nav-left">
+      <a href="home.html" data-key="navInicio">Home</a>
+      <a href="services.html" aria-current="page" data-key="navServ">Services</a>
+      <a href="about_us.html" data-key="navEquipo">About Us</a>
+    </nav>
+
+      <nav class="nav nav-right">
+      <a href="fqa.html" data-key="usaPreguntas">FAQ</a>
+      <button type="button" id="lang-toggle" class="btn-idioma">Español</button>
+      <a href="contac.html" class="btn" data-key="usaHeroBoton">Get in touch</a>
+    </nav>
+    </div>
+    <div class="menu-overlay"></div>
+  </div>
+</header>
+
+<main>
+<!-- Services -->
+<section id="services" class="servicios">
+  <div class="container">
+    <h2 class="titulo-pagina" data-key="usaServicios">Mental Health Services</h2>
+
+    <p class="intro" data-key="usaServiciosIntro">
+      Sometimes we are faced with challenges, complications or changes, no matter how minor or major they may feel or seem, that can cause us to feel as if we, or something in our life, is out of balance. These situations can lead to feelings such as confusion, stress, feeling “stuck”, anger, anxiety and/or sadness. My goal is to accompany you with presence and compassion as we work together to uncover ways to help you understand these feelings and find more balance amidst the situation you are in.
+    </p>
+
+    <div class="listas-dobles">
+      <div class="lista">
+        <h3 data-key="usaAreasTitulo">Areas of Focus</h3>
+        <ul>
+          <li class="animate-slide-left" data-key="usaArea1">Anxiety</li>
+          <li class="animate-slide-left" data-key="usaArea2">Depression</li>
+          <li class="animate-slide-left" data-key="usaArea3">Family/relationship stress</li>
+          <li class="animate-slide-left" data-key="usaArea4">Grief &amp; Loss</li>
+          <li class="animate-slide-left" data-key="usaArea5">Life transitions</li>
+          <li class="animate-slide-left" data-key="usaArea6">Parenting</li>
+          <li class="animate-slide-left" data-key="usaArea7">Caregiver strain</li>
+          <li class="animate-slide-left" data-key="serv6">Emotional regulation</li>
+        </ul>
+      </div>
+
+      <div class="lista">
+        <h3 data-key="usaMetodosTitulo">Therapeutic Approaches</h3>
+        <ul>
+          <li class="animate-slide-right" data-key="usaMetodo1">Attachment-based</li>
+          <li class="animate-slide-right" data-key="usaMetodo2">Grief</li>
+          <li class="animate-slide-right" data-key="usaMetodo3">Somatic</li>
+          <li class="animate-slide-right" data-key="usaMetodo4">Feminist</li>
+          <li class="animate-slide-right" data-key="usaMetodo5">Mindfulness</li>
+          <li class="animate-slide-right" data-key="usaMetodo6">Positive Psychology</li>
+          <li class="animate-slide-right" data-key="usaMetodo7">Strengths-based</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p data-key="usaFooter">© 2025 InnerLight Reflections.</p>
+  <p><a href="../index.html">Cambiar de país · Change country</a></p>
+</footer>
+
+</body>
+</html>

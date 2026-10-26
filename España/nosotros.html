@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuestro Equipo - InnerLight Reflections</title>
+
+  <link rel="icon" type="image/png" href="../img/Logo_kristine.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Estilo.css" />
+
+  <script src="../Animaciones.js" defer></script>
+  <script src="../idiomas.js" defer></script>
+</head>
+
+<body>
+
+<!-- Cabecera (igual en todas las páginas): menú a la izquierda, logo en el centro, acciones a la derecha -->
+<header class="site-header">
+  <div class="header-grid">
+    <a class="logo" href="index.html">
+      <img src="../img/Logo_kristine.png" alt="InnerLight Reflections Logo" />
+    </a>
+
+    <!-- Botón de tres barras (solo se ve en móvil y tablet) -->
+    <button type="button" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-panel">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Menú: en ordenador va en la cabecera; en móvil es un panel que se desliza desde la derecha -->
+    <div class="menu-panel" id="menu-panel">
+      <nav class="nav nav-left">
+      <a href="index.html" data-key="navInicio">Inicio</a>
+      <a href="servicios.html" data-key="navServ">Servicios</a>
+      <a href="nosotros.html" aria-current="page" data-key="navEquipo">Nuestro Equipo</a>
+    </nav>
+
+      <nav class="nav nav-right">
+      <a href="preguntas.html" data-key="navPreguntas">Preguntas Frecuentes</a>
+      <button type="button" id="lang-toggle" class="btn-idioma">English</button>
+      <a href="contacto.html" class="btn" data-key="heroBoton">Ponte en contacto</a>
+    </nav>
+    </div>
+    <div class="menu-overlay"></div>
+  </div>
+</header>
+
+<main>
+<!-- Presentación -->
+<section class="bienvenida">
+  <div class="container bienvenida-grid">
+
+    <div class="foto">
+      <img src="../img/Kristine3.jpeg" alt="Kristine Pelletier Garcia" class="animate-slide-right" />
+      <div class="logos">
+        <img src="../img2/logo_movement.jpeg" alt="Logo Grief Movement">
+        <img src="../img2/profesional_certificado_espanol.jpeg" alt="Profesional certificado">
+      </div>
+    </div>
+
+    <div class="texto">
+      <h2 data-key="bienvenidaTitulo">Kristine Pelletier Garcia</h2>
+      <h3 data-key="bienvenidaSubtitulo">Coach Certificado y Guía de Movimiento para el Duelo</h3>
+      <p class="animate-slide-left" data-key="bienvenidaP1">
+        Bienvenido/a, me alegra mucho que estés aquí. Mi nombre es Kristine Pelletier Garcia y soy trabajadora social clínica licenciada en Estados Unidos y psicoterapeuta especializada en duelo, bilingüe en inglés y español, con más de 10 años de experiencia clínica. En España, ofrezco acompañamiento emocional como Coach Certificada y Guía de Movimiento para el Duelo, acompañando a personas que atraviesan momentos de cambio, pérdida o transición.
+      </p>
+      <p class="animate-slide-left" data-key="bienvenidaP2">
+        Además del apoyo cognitivo tradicional, como Guía de Movimiento para el Duelo también ofrezco técnicas somáticas que se enfocan en ayudarte a transformar el dolor y la dificultad en paz y propósito mediante el movimiento, la respiración y el sonido.
+      </p>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer>
+  <p data-key="footer">© 2025 InnerLight Reflections.</p>
+  <p><a href="../index.html">Cambiar de país · Change country</a></p>
+</footer>
+
+</body>
+</html>

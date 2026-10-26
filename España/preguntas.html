@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Preguntas Frecuentes - InnerLight Reflections</title>
+
+  <link rel="icon" type="image/png" href="../img/Logo_kristine.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Estilo.css" />
+
+  <script src="../Animaciones.js" defer></script>
+  <script src="../idiomas.js" defer></script>
+</head>
+
+<body>
+
+<!-- Cabecera (igual en todas las páginas): menú a la izquierda, logo en el centro, acciones a la derecha -->
+<header class="site-header">
+  <div class="header-grid">
+    <a class="logo" href="index.html">
+      <img src="../img/Logo_kristine.png" alt="InnerLight Reflections Logo" />
+    </a>
+
+    <!-- Botón de tres barras (solo se ve en móvil y tablet) -->
+    <button type="button" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-panel">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Menú: en ordenador va en la cabecera; en móvil es un panel que se desliza desde la derecha -->
+    <div class="menu-panel" id="menu-panel">
+      <nav class="nav nav-left">
+      <a href="index.html" data-key="navInicio">Inicio</a>
+      <a href="servicios.html" data-key="navServ">Servicios</a>
+      <a href="nosotros.html" data-key="navEquipo">Nuestro Equipo</a>
+    </nav>
+
+      <nav class="nav nav-right">
+      <a href="preguntas.html" aria-current="page" data-key="navPreguntas">Preguntas Frecuentes</a>
+      <button type="button" id="lang-toggle" class="btn-idioma">English</button>
+      <a href="contacto.html" class="btn" data-key="heroBoton">Ponte en contacto</a>
+    </nav>
+    </div>
+    <div class="menu-overlay"></div>
+  </div>
+</header>
+
+<main>
+<!-- Preguntas frecuentes -->
+<section id="faq" class="faq">
+  <div class="container">
+    <h2 data-key="faqTitulo">Preguntas Frecuentes</h2>
+
+    <details>
+      <summary class="animate-slide-up" data-key="faq1Q">¿La terapia es 100 % online?</summary>
+      <p class="animate-slide-right" data-key="faq1A">
+        La mayoría de mis sesiones las realizo online; sin embargo, si estás interesado/a en tener una sesión presencial, por favor contáctame para hablar sobre las opciones disponibles.
+      </p>
+    </details>
+
+    <details>
+      <summary class="animate-slide-up" data-key="faq2Q">¿Cuánto cuesta una sesión?</summary>
+      <p class="animate-slide-right" data-key="faq2A">
+        Actualmente, cobro 60€ por sesión.
+      </p>
+    </details>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p data-key="footer">© 2025 InnerLight Reflections.</p>
+  <p><a href="../index.html">Cambiar de país · Change country</a></p>
+</footer>
+
+</body>
+</html>

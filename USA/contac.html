@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - InnerLight Reflections</title>
+
+  <link rel="icon" type="image/png" href="../img/Logo_kristine.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Estilo.css" />
+
+  <script src="../Animaciones.js" defer></script>
+  <script src="../idiomas.js" defer></script>
+</head>
+
+<body>
+
+<!-- Cabecera (igual en todas las páginas): menú a la izquierda, logo en el centro, acciones a la derecha -->
+<header class="site-header">
+  <div class="header-grid">
+    <a class="logo" href="home.html">
+      <img src="../img/Logo_kristine.png" alt="InnerLight Reflections Logo" />
+    </a>
+
+    <!-- Botón de tres barras (solo se ve en móvil y tablet) -->
+    <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="menu-panel">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Menú: en ordenador va en la cabecera; en móvil es un panel que se desliza desde la derecha -->
+    <div class="menu-panel" id="menu-panel">
+      <nav class="nav nav-left">
+      <a href="home.html" data-key="navInicio">Home</a>
+      <a href="services.html" data-key="navServ">Services</a>
+      <a href="about_us.html" data-key="navEquipo">About Us</a>
+    </nav>
+
+      <nav class="nav nav-right">
+      <a href="fqa.html" data-key="usaPreguntas">FAQ</a>
+      <button type="button" id="lang-toggle" class="btn-idioma">Español</button>
+      <a href="contac.html" class="btn" data-key="usaHeroBoton">Get in touch</a>
+    </nav>
+    </div>
+    <div class="menu-overlay"></div>
+  </div>
+</header>
+
+<main>
+<!-- Contact -->
+<section id="contact" class="contacto">
+  <div class="container">
+    <h2 data-key="usaFormTitulo">Get in touch</h2>
+
+    <form action="https://formspree.io/f/xanbgzky" method="POST">
+      <label for="name" data-key="usaFormNombre">Full name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email" data-key="usaFormCorreo">Email address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message" data-key="usaFormMensaje">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn" data-key="usaFormEnviar">Send message</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p data-key="usaFooter">© 2025 InnerLight Reflections.</p>
+  <p><a href="../index.html">Cambiar de país · Change country</a></p>
+</footer>
+
+</body>
+</html>

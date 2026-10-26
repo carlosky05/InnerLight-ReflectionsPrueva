@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto - InnerLight Reflections</title>
+
+  <link rel="icon" type="image/png" href="../img/Logo_kristine.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Estilo.css" />
+
+  <script src="../Animaciones.js" defer></script>
+  <script src="../idiomas.js" defer></script>
+</head>
+
+<body>
+
+<!-- Cabecera (igual en todas las páginas): menú a la izquierda, logo en el centro, acciones a la derecha -->
+<header class="site-header">
+  <div class="header-grid">
+    <a class="logo" href="index.html">
+      <img src="../img/Logo_kristine.png" alt="InnerLight Reflections Logo" />
+    </a>
+
+    <!-- Botón de tres barras (solo se ve en móvil y tablet) -->
+    <button type="button" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-panel">
+      <span></span><span></span><span></span>
+    </button>
+
+    <!-- Menú: en ordenador va en la cabecera; en móvil es un panel que se desliza desde la derecha -->
+    <div class="menu-panel" id="menu-panel">
+      <nav class="nav nav-left">
+      <a href="index.html" data-key="navInicio">Inicio</a>
+      <a href="servicios.html" data-key="navServ">Servicios</a>
+      <a href="nosotros.html" data-key="navEquipo">Nuestro Equipo</a>
+    </nav>
+
+      <nav class="nav nav-right">
+      <a href="preguntas.html" data-key="navPreguntas">Preguntas Frecuentes</a>
+      <button type="button" id="lang-toggle" class="btn-idioma">English</button>
+      <a href="contacto.html" class="btn" data-key="heroBoton">Ponte en contacto</a>
+    </nav>
+    </div>
+    <div class="menu-overlay"></div>
+  </div>
+</header>
+
+<main>
+<!-- Contacto -->
+<section id="contacto" class="contacto">
+  <div class="container">
+    <h2 data-key="formTitulo">Solicita una cita</h2>
+    <p class="telefono" data-key="heroTelefono">Teléfono: +34 674 43 30 59</p>
+
+    <form action="https://formspree.io/f/xanbgzky" method="POST">
+      <label for="nombre" data-key="formNombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email" data-key="formCorreo">Correo electrónico</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje" data-key="formMensaje">Mensaje o motivo de consulta</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <button type="submit" class="btn" data-key="formEnviar">Enviar mensaje</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p data-key="footer">© 2025 InnerLight Reflections.</p>
+  <p><a href="../index.html">Cambiar de país · Change country</a></p>
+</footer>
+
+</body>
+</html>
